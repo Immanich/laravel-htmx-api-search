@@ -25,10 +25,15 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
 Route::get('/product', function () {
     return view('products');
-});
-// Route::get('/product', [ProductController::class, 'index'])->name('products');
+})->name('product.index');
+
+Route::get('/product/add-product', function () {
+    return view('add-product');
+})->name('product.add');
+Route::post('/product/add-product', [ProductController::class, 'store'])->name('product.store');
 
 Route::get('/contact', function () {
     return view('contact');

@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/htmx.org@1.9.12"></script>
 </head>
 <body class="flex">
-    <div class="navbar flex flex-col p-4 bg-gray-300 h-lvh w-2/12" style="">
+    <div class="navbar flex flex-col p-4 bg-gray-300 min-h-lvh w-2/12" style="">
         <nav class="text-center">
             <ul class="text-2xl">
                 <li class="mt-3"><a href="/">Home</a></li>
